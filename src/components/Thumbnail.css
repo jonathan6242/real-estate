@@ -1,0 +1,234 @@
+.thumbnail__wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.thumbnail__img--wrapper {
+  width: 100%;
+  padding-bottom: 70% !important;
+  position: relative !important;
+  display: flex;
+}
+
+/* SWIPER */
+
+.swiper-wrapper {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+.thumbnail__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* https://i2.au.reastatic.net/150x200-format=avif,/52a00bb0dbe360a1a2c76fbe6dd3ce84b7f2b8c6135f8e9c8c97b466483f8cce/main.jpg */
+
+/* HEADER */
+
+.thumbnail__header {
+  width: 100%;
+  height: 54px;
+  background: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.thumbnail__agent--name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 96px;
+}
+
+.thumbnail__agent--wrapper {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  z-index: 5;
+}
+
+.thumbnail__agent {
+  width: 100%;
+}
+
+/* CONTENT */
+
+.thumbnail__content {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  position: relative;
+}
+
+.thumbnail__content--left {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail__name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.thumbnail__location {
+  margin-bottom: 16px;
+}
+
+.thumbnail__bottom {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.thumbnail__details {
+  display: flex;
+}
+
+.thumbnail__detail {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.thumbnail__detail i {
+  margin-right: 4px;
+}
+
+.thumbnail__details--bar {
+  margin-right: 8px;
+  color: gray;
+}
+
+.thumbnail__detail--number {
+  height: 20px;
+  position: relative;
+}
+
+.thumbnail__detail--metric {
+  position: absolute;
+  bottom: 1px;
+  right: -28px;
+}
+
+.thumbnail__detail:last-child {
+  margin-right: 40px;
+}
+
+.thumbnail__img--wrapper .swiper-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* THUMBNAIL RIGHT */
+
+.thumbnail__content--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.thumbnail__save {
+  font-size: 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+}
+
+
+.thumbnail__change {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.thumbnail__edit,
+.thumbnail__delete {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  position: absolute;
+  top: 16px;
+}
+
+.thumbnail__edit i,
+.thumbnail__delete i {
+  color: #fff;
+}
+
+.thumbnail__delete {
+  left: 24px;
+}
+
+.thumbnail__edit {
+  left: 64px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 468px) {
+  .thumbnail__details--bar {
+    display: none;
+  }
+  .thumbnail__bottom {
+    flex-direction: column;
+  }
+  .thumbnail__property {
+    margin-top: 8px;
+  }
+  .thumbnail__header {
+    height: 50px;
+  }
+  .thumbnail__agent--name {
+    margin-right: 64px;
+  }
+  .thumbnail__agent--wrapper {
+    top: 8px;
+    height: 48px;
+    width: 48px;
+  }
+  .thumbnail__edit,
+  .thumbnail__delete {
+    top: 15px;
+  }
+}

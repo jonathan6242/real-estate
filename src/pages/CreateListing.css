@@ -1,0 +1,136 @@
+.create__container {
+  flex: 1;
+  padding: 48px 0;
+  background: whitesmoke;
+}
+
+.create__row {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.create__title {
+  margin-bottom: 32px;
+}
+
+.create__form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* INPUT GROUP */
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group__label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-group__buttons {
+  display: flex;
+}
+
+.input-group__button {
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  padding: 12px 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-group__button--active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.input-group__button:nth-child(1) {
+  margin-right: 8px;
+}
+
+.input-group__text {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  max-width: 326px;
+}
+
+textarea.input-group__text {
+  resize: none;
+  height: 85px;
+}
+
+.input-group__numbers {
+  display: flex;
+}
+
+.input-group__number {
+  margin-right: 24px;
+}
+
+.input-group__number--input {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 12px;
+  width: 60px;
+}
+
+.land-size {
+  width: 100px;
+}
+
+.price {
+  width: 150px;
+}
+
+/* FILE INPUT */
+
+.input-group__file {
+  width: 100%;
+  max-width: 700px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.input-group__file::-webkit-file-upload-button {
+  background-color: var(--primary);
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+/* SUBMIT BUTTON */
+
+.create__form--submit {
+  cursor: pointer;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 24px;
+}

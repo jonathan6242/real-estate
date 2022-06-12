@@ -1,0 +1,127 @@
+.profile__container {
+  padding: 48px 0;
+  flex: 1;
+  display: flex;
+  background: whitesmoke;
+}
+
+.profile__row {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.profile__title {
+  margin-bottom: 24px;
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile__subtitle {
+  margin-bottom: 16px;
+}
+
+.profile__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profile__details {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.profile__name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  position: relative;
+  height: 29px;
+}
+
+.profile__name--edit {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 18px;
+  right: 40px;
+}
+
+.profile__name--edit i {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.signout,
+.profile__create {
+  cursor: pointer;
+  background: #3d3b40;
+  color: #fff;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.signout {
+  padding: 8px 16px;
+}
+
+.profile__name--input {
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  background: whitesmoke;
+  width: auto;
+}
+
+.profile__name form {
+  width: 100%;
+}
+
+.profile__name--input {
+  width: 100%;
+}
+
+.profile__create {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  justify-content: space-between;
+}
+
+.profile__create i {
+  color: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+
+
+@media(max-width: 468px) {
+  .profile__details {
+    max-width: unset;
+  }
+  .profile__create {
+    max-width: unset;
+  }
+  .profile__row {
+    padding: 0 16px;
+  }
+  .profile__title {
+    font-size: 24px;
+  }
+}

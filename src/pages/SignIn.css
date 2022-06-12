@@ -1,0 +1,144 @@
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: whitesmoke;
+}
+
+.sign-in__form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background: #fff;
+  padding: 24px 48px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.sign-in .nav__logo {
+  justify-content: center;
+  margin: 0;
+  margin: 8px 0 24px 0;
+}
+
+.sign-in__title {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.sign-in__input {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.sign-in__input--container i {
+  margin-right: 16px;
+  color: gray;
+}
+
+.sign-in__input--container {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  padding-bottom: 0;
+  outline: 1px solid gray;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.sign-in__input::placeholder {
+  color: gray;
+}
+
+.active {
+  outline-color: #3d3b40;
+  outline-width: 2px;
+}
+
+.show-password {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.show-password i {
+  font-size: 20px;
+  width: 22.5px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in__submit {
+  background: var(--primary);
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 300ms ease;
+  border-radius: 4px;
+  margin: 24px 0;
+}
+
+.sign-in__submit:hover {
+  background: var(--primary-hover);
+}
+
+.sign-in__link {
+  color: #0078bd;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.sign-in__or {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.sign-in__or::before,
+.sign-in__or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: gray;
+}
+
+.sign-in__or span {
+  margin: 0 8px;
+  font-weight: 700;
+}
+
+.sign-in__create {
+  margin-bottom: 24px;
+}
+
+.sign-in__text {
+  margin-bottom: 24px;
+}
+
+@media(max-width: 468px) {
+  .sign-in .nav__logo i {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  .sign-in .nav__logo--text {
+    display: flex;
+    font-size: 18px;
+  }
+  .sign-in {
+    align-items: stretch;
+  }
+  .sign-in__form {
+    justify-content: center;
+    padding: 16px;
+  }
+}
